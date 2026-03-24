@@ -1,0 +1,99 @@
+
+
+:root {
+    --mops-orange: #ff8c00;
+}
+
+body {
+    background-color: #050505;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.logo-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.hero-img {
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 0 60px rgba(255, 140, 0, 0.2);
+}
+
+.btn-primary {
+    background: var(--mops-orange);
+    transition: 0.3s transform ease, 0.3s box-shadow ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(255, 140, 0, 0.4);
+}
+
+/* === ИСПРАВЛЕНИЕ ДЛЯ QR-КОДА === */
+.qr-frame {
+    display: inline-block;
+    padding: 20px;
+    background-color: #ffffff; /* Чистый белый фон для контраста */
+    border-radius: 2rem; /* Округлые углы */
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.15), /* Мягкое белое свечение */
+                0 0 20px rgba(255, 140, 0, 0.1);    /* Оранжевый отблеск */
+    transition: 0.3s box-shadow ease;
+}
+
+.qr-frame:hover {
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.3), /* Усиливаем свечение при наведении */
+                0 0 30px rgba(255, 140, 0, 0.2);
+}
+
+.tariff-card {
+    transition: 0.3s all ease;
+}
+
+.tariff-card:hover {
+    transform: scale(1.02);
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.buy-link {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.buy-link:hover {
+    background: white;
+    color: black;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+.animate-float {
+    animation: float 5s ease-in-out infinite;
+}
+
+.qr-frame {
+    display: inline-block;
+    padding: 15px;
+    background-color: #ffffff; 
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+}
